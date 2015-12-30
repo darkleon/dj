@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     '_user',
     'django_jenkins',
+    'django_nose',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -128,3 +129,10 @@ JENKINS_TASKS = ()
 PROJECT_APPS=(
     '_user',
 )
+#TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+#NOSE_ARGS = [
+#    '--with-coverage',
+#    '--cover-package=_user',
+#]
+JENKINS_TASKS = ('django_jenkins.tasks.run_pylint',)

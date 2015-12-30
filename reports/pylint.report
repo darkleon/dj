@@ -1,0 +1,136 @@
+************* Module _user.urls
+_user/urls.py:6: [C0330(bad-continuation), ] Wrong hanging indentation (add 3 spaces).
+	url(r'^$', views.index, name='index'),
+ ^  |
+************* Module _user.admin
+_user/admin.py:1: [W0611(unused-import), ] Unused admin imported from django.contrib
+************* Module _user.tests
+_user/tests.py:1: [W0611(unused-import), ] Unused TestCase imported from django.test
+************* Module _user.views
+_user/views.py:1: [W0611(unused-import), ] Unused render imported from django.shortcuts
+
+
+Report
+======
+28 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |9      |NC         |NC         |22.22       |11.11    |
++---------+-------+-----------+-----------+------------+---------+
+|class    |4      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |1      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    _user 
+      \-views (_user.urls)
+    django 
+      \-apps (_user.apps)
+      \-conf 
+      | \-urls (_user.urls)
+      \-contrib 
+      | \-admin (_user.admin)
+      \-db 
+      | \-migrations (_user.migrations.0001_initial)
+      | \-models (_user.migrations.0001_initial,_user.models)
+      |   \-deletion (_user.migrations.0001_initial)
+      \-http (_user.views)
+      \-shortcuts (_user.views)
+      \-test (_user.tests)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |57     |64.04 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |7      |7.87  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |25     |28.09 |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |1      |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |3      |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++------------+------+--------+---------+-----------+
+|module      |error |warning |refactor |convention |
++============+======+========+=========+===========+
+|_user.views |0.00  |33.33   |0.00     |0.00       |
++------------+------+--------+---------+-----------+
+|_user.tests |0.00  |33.33   |0.00     |0.00       |
++------------+------+--------+---------+-----------+
+|_user.admin |0.00  |33.33   |0.00     |0.00       |
++------------+------+--------+---------+-----------+
+|_user.urls  |0.00  |0.00    |0.00     |100.00     |
++------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------+------------+
+|message id       |occurrences |
++=================+============+
+|unused-import    |3           |
++-----------------+------------+
+|bad-continuation |1           |
++-----------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 8.57/10
+
