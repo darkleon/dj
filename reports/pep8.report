@@ -1,5 +1,6 @@
 _user/tests.py:8:1: W391 blank line at end of file
 _user/urls.py:6:1: W191 indentation contains tabs
+_user/views.py:10:1: E302 expected 2 blank lines, found 1
 _user/migrations/0001_initial.py:20:80: E501 line too long (114 > 79 characters)
 _user/migrations/0001_initial.py:28:80: E501 line too long (114 > 79 characters)
 _user/migrations/0001_initial.py:30:80: E501 line too long (82 > 79 characters)
