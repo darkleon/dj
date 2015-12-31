@@ -135,7 +135,7 @@ PROJECT_APPS=(
 #    '--with-coverage',
 #    '--cover-package=_user',
 #]
-JENKINS_TASKS = ('django_jenkins.tasks.run_pylint','django_jenkins.tasks.run_pep8',)
+JENKINS_TASKS = ('django_jenkins.tasks.run_pylint','django_jenkins.tasks.run_pep8','django_jenkins.tasks.run_pyflakes',)
 
 #TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.run_tests'
 #TEST_OUTPUT_VERBOSE = True

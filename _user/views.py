@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-adef index(request):
+def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 
 def item(request):
