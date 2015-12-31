@@ -136,3 +136,10 @@ PROJECT_APPS=(
 #    '--cover-package=_user',
 #]
 JENKINS_TASKS = ('django_jenkins.tasks.run_pylint','django_jenkins.tasks.run_pep8',)
+
+#TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.run_tests'
+#TEST_OUTPUT_VERBOSE = True
+#TEST_OUTPUT_DESCRIPTIONS = True
+#TEST_OUTPUT_DIR = 'xmlrunner'
+
+TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
