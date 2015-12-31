@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="_user.test1.GetModelsForConnectionTests-20151231094107" tests="4" time="0.001">
+	<testcase classname="_user.test1.GetModelsForConnectionTests" name="test_all_models" time="0.000"/>
+	<testcase classname="_user.test1.GetModelsForConnectionTests" name="test_no_models" time="0.000"/>
+	<testcase classname="_user.test1.GetModelsForConnectionTests" name="test_some_models" time="0.000"/>
+	<testcase classname="_user.test1.GetModelsForConnectionTests" name="test_wrong_models" time="0.000"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
