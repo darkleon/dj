@@ -9,3 +9,6 @@ def index(request):
 
 def item(request):
     return HttpResponse("11111.")
+
+def itemList(request):
+    return HttpResponse("List.")
